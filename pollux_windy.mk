@@ -21,7 +21,8 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/pollux_windy/overlay
 
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
+    $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device \
+    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Device specific sysmon_monitor conf
 PRODUCT_COPY_FILES += \
